@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Patrick — Content Design & UX Writing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+
+  <div id="stars-container"></div>
+
+  <nav>
+    <a href="#" class="logo">lucas patrick</a>
+    <ul>
+      <li><a href="#work" data-i18n="nav.work">trabalhos</a></li>
+      <li><a href="#about" data-i18n="nav.about">sobre</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">contato</a></li>
+      <li>
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="pt">PT</button>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="shooting-star-wrap"><div class="shooting-star">✦</div></div>
+    <div class="plus" style="top:160px;left:90px;">+</div>
+    <div class="plus" style="top:240px;right:140px;">+</div>
+    <h1 data-i18n="hero.h1">oi, sou lucas patrick, às vezes <em>content designer</em>, às vezes estrategista,<br>mas <em>sempre</em> um escritor. feito de palavras… e é isso que tem na minha jornada</h1>
+    <div class="dot"></div>
+  </section>
+
+  <section id="work">
+    <div class="section-label"><span data-i18n="work.label">trabalhos selecionados</span></div>
+    <div class="grid-row">
+      <div class="grid-item" data-index="0"><div class="img-placeholder ph-1"></div><div class="caption"><span class="title" data-i18n="proj.0.title">Assistente Virtual</span><span class="brand">GFT Technologies</span><span class="plus-icon">+</span></div></div>
+      <div class="grid-item" data-index="1"><div class="img-placeholder ph-2"></div><div class="caption"><span class="title" data-i18n="proj.1.title">Joice — Chatbot</span><span class="brand">Oi Telecom</span></div></div>
+      <div class="grid-item" data-index="2"><div class="img-placeholder ph-3"></div><div class="caption"><span class="title" data-i18n="proj.2.title">Guia de Conteúdo</span><span class="brand">Nuvemshop</span></div></div>
+      <div class="grid-item" data-index="3"><div class="img-placeholder ph-7"></div><div class="caption"><span class="title" data-i18n="proj.3.title">Migração ao novo admin</span><span class="brand">Nuvemshop</span><span class="plus-icon">+</span></div></div>
+    </div>
+    <div class="grid-row grid-row-last">
+      <div class="grid-item" data-index="4"><div class="img-placeholder ph-8"></div><div class="caption"><span class="title" data-i18n="proj.4.title">Fluxos de Pagamento</span><span class="brand">GFT Technologies</span></div></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div>
+      <h2 data-i18n="about.title">content designer, ux writer & designer conversacional</h2>
+      <div class="skills-list">
+        <span class="skill-tag">content design</span>
+        <span class="skill-tag">ux writing</span>
+        <span class="skill-tag">microcopy</span>
+        <span class="skill-tag" data-i18n="skill.conv">designer conversacional</span>
+        <span class="skill-tag">chatbot & ia</span>
+        <span class="skill-tag">tone of voice</span>
+        <span class="skill-tag">design system</span>
+        <span class="skill-tag">figma & miro</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <p data-i18n="about.p1">Sou Lucas Patrick, Content Designer e UX Writer com mais de 7 anos de experiência em interfaces digitais. Atuo na criação de textos para produtos #mobilefirst, fluxos conversacionais, chatbots e guias de redação — sempre com foco em clareza, escalabilidade e impacto real para o usuário.</p>
+      <p data-i18n="about.p2">Já passei por empresas como GFT Technologies, Oi Telecom, Nuvemshop e Caixa Seguradora, trabalhando de perto com designers, PMs, desenvolvedores e cientistas de dados em metodologia ágil.</p>
+      <p data-i18n="about.p3">Formado em Publicidade pela Estácio, com Pré-MBA em Inteligência Artificial pela Saint Paul e certificação intensiva de UX Writer pela Awari. Baseado em Brasília, atuando remotamente.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="plus" style="top:20px;left:80px;">+</div>
+    <div class="plus" style="bottom:40px;right:100px;">+</div>
+    <h2><span data-i18n="contact.cta">vamos trabalhar juntos</span></h2>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/lcsptrck/" target="_blank">linkedin</a>
+      <a href="/cdn-cgi/l/email-protection#375b5444474345545c77505a565e5b1954585a">e-mail</a>
+      <a href="#">brasília, br</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="thanks">thanks <em>___</em> <span data-i18n="footer.thanks">obrigado</span></div>
+    <small>lucas patrick — content design &amp; ux writing — 2025</small>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal-overlay">
+    <button class="modal-close" id="modal-close-btn">✕</button>
+    <div class="modal-inner">
+      <div class="modal-media" id="modal-media-col"><div id="modal-media-content"></div></div>
+      <div class="modal-info">
+        <div class="modal-info-tag" id="modal-tag"></div>
+        <h2 id="modal-title"></h2>
+        <div class="brand-name" id="modal-brand"></div>
+        <div class="meta" id="modal-meta"></div>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+    <div class="modal-nav">
+      <button id="prev-btn">←</button>
+      <button id="next-btn">→</button>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox">
+    <button id="lightbox-close">✕</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
